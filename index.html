@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visual Studio Code-Code Editor</title>
+        <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="upper-page">
+                <header class="header">
+                    <a href="">
+                        <div class="logo">
+                            <img src="./assets/logo.png" alt="logo" id="logo">
+                            <span id="logo-name">Visual Studio Code</span>
+                        </div>
+                    </a>
+                    <div>
+                        <ul class="menu-items">
+                            <li id="docs">Docs</li>
+                            <li id="updates">Updates</li>
+                            <li id="blog">Blog</li>
+                            <li id="api">API</li>
+                            <li id="extensions">Extensions</li>
+                            <li id="faq">FAQ</li>
+                        </ul>
+                    </div>
+                    <div class="theme-search-download">
+                        <img src="./assets/theme-light.svg" alt="Theme svg" id="theme-svg">
+                        <input type="search" placeholder="search Docs..." id="search-doc">
+                        <a href="./assets/code_1.93.1-1726079302_amd64.deb" download>
+                            <button type="button" id="download-button">Download</button>
+                        </a>
+                    </div>
+                </header>
+                <div class="new-version-avail">
+                    <p id="new-version-avail-line">
+                        <a href="" target="_blank">Version 1.93</a>  is now available! Read about the new features and fixes from August.
+                    </p>
+                </div>
+                <div class="main-content">
+                    <div class="left-side-content">
+                        <span id="upper-heading">Free. Built on open source. Runs everywhere.</span>
+                        <h1 id="main-content-heading">Code Editing.
+                            <br> Redefined.
+                        </h1>
+                        <div class="download-types">
+                            <div class="deb">
+                                <div class="downloadIcon-deb">
+                                    <img src="./assets/download.svg" alt="download-icn-svg">
+                                    <span class="download-type-heading">.deb</span>
+                                </div>
+                                <span id="for">Debian, Ubuntu...</span>
+                            </div>
+                            <div class="deb">
+                                <div class="downloadIcon-deb">
+                                    <img src="./assets/download.svg" alt="download-icn-svg">
+                                    <span class="download-type-heading">.rpm</span>
+                                </div>
+                                <span id="for">Red Hat, Fedora...</span>
+                            </div>
+                        </div>
+                        <div class="download-docs">
+                            <span id="first-line">
+                                <a href="">Web</a>,
+                                <a href=""> Insiders edition</a>, or
+                                <a href=""> other platforms</a>
+                            </span>
+                            <span id="second-line">By using VS Code, you agree to its
+                                <a href="">license</a>and
+                                <a href="">privacy statement.</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="right-side-content">
+                        <img src="./assets/home-banner.png" alt="code-screenshot-mac" id="code-screenshot-mac">
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="lower-page">
+                <div class="code-in-any-language">
+                    <div class="heading-description">
+                        <span id="CIAL-heading">Code in any language</span>
+                        <p id="CIAL-description">
+                            VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+                        </p>
+                    </div>
+                    <div class="languages-icons">
+                        <ul class="line">
+                            <li>
+                                <img src="./assets/Languages-Logo/language-js.png" alt="">
+                                JavaScript
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-cs.png" alt="">
+                                c#
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-java.png" alt="">
+                                Java
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-markdown.png" alt="">
+                                Markdown
+                            </li>
+                        </ul>
+                        <ul class="line">
+                            <li>
+                                <img src="./assets/Languages-Logo/language-ts.png" alt="">
+                                TypeScript
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-cpp.png" alt="">
+                                C++
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-json.png" alt="">
+                                JSON
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-powershell.png" alt="">
+                                Powershell
+                            </li>
+                        </ul>
+                        <ul class="line">
+                            <li>
+                                <img src="./assets/Languages-Logo/language-python.png" alt="">
+                                Python
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-html.png" alt="">
+                                HTML
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-php.png" alt="">
+                                PHP
+                            </li>
+                            <li>
+                                <img src="./assets/Languages-Logo/language-yaml.png" alt="">
+                                YAML
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code-wih-extensions">
+                    <div class="heading-description">
+                        <span id="CIAL-heading">
+                            Code with extensions
+                        </span>
+                        <p id="CIAL-description">
+                            Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.
+                        </p>
+                        <a href="">Learn more about extensions</a>
+                    </div>
+                    <div class="all-lang-cards">
+                        <div class="language-cards">
+                            <div class="card">
+                                <div class="lc-image-heading">
+                                    <img src="./assets/Languages-Cards/python-extension.png" alt="Python">
+                                    <span id="language-cards-heading">Python</span>
+                                </div>
+                                <span class="description">
+                                    Adds rich language support for python
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="lc-image-heading">
+                                    <img src="./assets/Languages-Cards/github-pull-requests-extension (1).png" alt="Python">
+                                    <span id="language-cards-heading">Python</span>
+                                </div>
+                                <span class="description">
+                                    Adds rich language support for python
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="lc-image-heading">
+                                    <img src="./assets/Languages-Cards/c-extension.png" alt="Python">
+                                    <span id="language-cards-heading">Python</span>
+                                </div>
+                                <span class="description">
+                                    Adds rich language support for python
+                                </span>
+                            </div>
+                        </div>
+                        <div class="language-cards">
+                            <div class="card">
+                                <div class="lc-image-heading">
+                                    <img src="./assets/Languages-Cards/copilot-extension.png" alt="Python">
+                                    <span id="language-cards-heading">Python</span>
+                                </div>
+                                <span class="description">
+                                    Adds rich language support for python
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="lc-image-heading">
+                                    <img src="./assets/Languages-Cards/gitlens-extension.png" alt="Python">
+                                    <span id="language-cards-heading">Python</span>
+                                </div>
+                                <span class="description">
+                                    Adds rich language support for python
+                                </span>
+                            </div>
+                            <div class="card">
+                                <div class="lc-image-heading">
+                                    <img src="./assets/Languages-Cards/jupyter-extension.png" alt="Python">
+                                    <span id="language-cards-heading">Python</span>
+                                </div>
+                                <span class="description">
+                                    Adds rich language support for python
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Code-with-GitHub-Copilot">
+                    <div class="heading-description">
+                        <span id="CIAL-heading">
+                            Code with GitHub Copilot
+                        </span>
+                        <div class="CWGCC-desciption">
+                            <span>
+                                Write code faster and smarter with GitHub Copilot, your AI pair programmer.
+                            </span>
+                            <span>
+                                <a href="">Try GitHub Copilot free for 30 days</a>
+                            </span>
+                            <span>
+                                Completions present suggestions automatically to help you code more efficiently.
+                            </span>
+                            <span>Copilot Chat understands the context of your code, workspace, extensions, settings, and more.</span>
+                            <span>
+                                Inline Chat enables you to iteratively generate edits and get answers to quick questions, directly on your code.
+                            </span>
+                        </div>
+                        <a href="">Learn more about extensions</a>
+                    </div>
+                    <img src="./assets/swimlane-copilot.png" alt="">
+                </div>
+                <div class="Code-with-GitHub-Copilot">
+                    <div class="heading-description">
+                        <span id="CIAL-heading">
+                            Code fully customized
+                        </span>
+                        <div class="CWGCC-desciption">
+                            <span>
+                                Write code faster and smarter with GitHub Copilot, your AI pair programmer.
+                            </span>
+                            <span>
+                                <a href="">Try GitHub Copilot free for 30 days</a>
+                            </span>
+                            <span>
+                                Completions present suggestions automatically to help you code more efficiently.
+                            </span>
+                            <span>Copilot Chat understands the context of your code, workspace, extensions, settings, and more.</span>
+                            <span>
+                                Inline Chat enables you to iteratively generate edits and get answers to quick questions, directly on your code.
+                            </span>
+                        </div>
+                        <a href="">Learn more about extensions</a>
+                    </div>
+                    <img src="./assets/swimlane-customized.png" alt="">
+                </div>
+                <div class="Code-with-GitHub-Copilot">
+                    <div class="heading-description">
+                        <span id="CIAL-heading">
+                            Code anywhere
+                        </span>
+                        <div class="CWGCC-desciption">
+                            <span>
+                                Write code faster and smarter with GitHub Copilot, your AI pair programmer.
+                            </span>
+                            <span>
+                                <a href="">Try GitHub Copilot free for 30 days</a>
+                            </span>
+                            <span>
+                                Completions present suggestions automatically to help you code more efficiently.
+                            </span>
+                            <span>Copilot Chat understands the context of your code, workspace, extensions, settings, and more.</span>
+                            <span>
+                                Inline Chat enables you to iteratively generate edits and get answers to quick questions, directly on your code.
+                            </span>
+                        </div>
+                        <a href="">Learn more about extensions</a>
+                    </div>
+                    <img src="./assets/swimlane-anywhere.png" alt="" id="CWGC-last-image">
+                </div>
+                <!-- code with rich features -->
+                <div class="code-with-rich-features">
+                    <div class="CWRF-heading">
+                        <h2>Code with rich features</h2>
+                        <p>There's a lot more to an editor. Whether it's using built-in features
+                            <br> or rich extensions, there's something for everyone.
+                        </p>
+                    </div>
+                    <div class="full-cards">
+                        <div class="CWRF-Cards">
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                        </div>
+                        <div class="CWRF-Cards">
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                            <div class="CWF-class-one">
+                                <img src="./assets/code/codicon-terminal.svg" alt="">
+                                <span>Integerated Terminal</span>
+                                <p>Use your favourite shell whether it's zsh, or git bash, all inside the editor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="links">
+                        <a href="">
+                            <img src="./assets/links/x-icon.svg" alt="" id="x">
+                        </a>
+                        <a href="">
+                            <img src="./assets/links/github-icon.svg" alt="" id="github">
+                        </a>
+                        <a href="">
+                            <img src="./assets/links/youtube-icon.svg" alt="" id="youtube">
+                        </a>
+                    </div>
+                    <div class="more-links">
+                        <ul id="more-links">
+                            <li>Support</li>
+                            <li>Privacy</li>
+                            <li>Terms of Use</li>
+                            <li>License</li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
